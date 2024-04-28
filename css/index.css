@@ -1,0 +1,9 @@
+/* ! Imports */
+@import './reset.css';
+@import './fonts.css';
+
+
+.title{
+    font-family: 'diplomat', Courier, monospace;
+    font-size: 14rem;
+}
