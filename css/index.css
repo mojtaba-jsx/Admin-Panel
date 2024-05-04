@@ -2,7 +2,13 @@
 @import './reset.css';
 @import './fonts.css';
 
-
+:root{
+    --mercury :#E5E5E5;
+    --blueDianne :#224957;
+    --aquaGreen:#20DF7F;
+    --white:#ffffff;
+    --black:#000000;
+}
 .title{
     font-family: 'diplomat', Courier, monospace;
     font-size: 14rem;
@@ -12,7 +18,7 @@
 }
 
 body{
-    background-color: #E5E5E5;
+    background-color: var(--mercury);
 }
 
 /* ! ////////header Section//////// */
@@ -22,11 +28,11 @@ body{
     font-family: 'diplomat', Courier, monospace;
     text-align: center;
     margin-top: 2rem;
-    color: #224957;
+    color: var(--blueDianne);
     font-weight: bold;
 }
 .header__icon{
     width: 4rem;
     height: 4rem;
-    fill: #20DF7F;
+    fill: var(--aquaGreen);
 }
