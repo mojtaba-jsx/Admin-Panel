@@ -7,3 +7,26 @@
     font-family: 'diplomat', Courier, monospace;
     font-size: 14rem;
 }
+.svg-box{
+    display: none;
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
+/* ! ////////header Section//////// */
+
+.header__title{
+    font-size: 4rem;
+    font-family: 'diplomat', Courier, monospace;
+    text-align: center;
+    margin-top: 2rem;
+    color: #224957;
+    font-weight: bold;
+}
+.header__icon{
+    width: 4rem;
+    height: 4rem;
+    fill: #20DF7F;
+}
