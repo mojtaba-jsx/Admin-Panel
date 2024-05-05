@@ -1,0 +1,192 @@
+/*! ==============================Responsive MediaQueries ================================ */
+
+/* *  ------------------------1400px------------------------ */
+@media screen and (max-width: 1400px) {
+}
+
+/* *  ------------------------1280px------------------------ */
+@media screen and (max-width: 1280px) {
+}
+
+/* *  ------------------------1255px------------------------ */
+@media screen and (max-width: 1255px) {
+}
+
+/* *  ------------------------1230px------------------------ */
+
+@media screen and (max-width: 1230px) {
+}
+
+/* *  ------------------------1200px------------------------ */
+@media screen and (max-width: 1200px) {
+}
+
+/* *  ------------------------1140px------------------------ */
+@media screen and (max-width: 1140px) {
+}
+
+/* *  ------------------------980px------------------------ */
+@media screen and (max-width: 980px) {
+}
+
+/* *  ------------------------945px------------------------ */
+@media screen and (max-width: 945px) {
+}
+
+/* *  ------------------------940px------------------------ */
+@media screen and (max-width: 940px) {
+}
+
+/* *  ------------------------910px------------------------ */
+@media screen and (max-width: 910px) {
+}
+
+/* *  ------------------------900px------------------------ */
+@media screen and (max-width: 900px) {
+}
+
+/* *  ------------------------925px------------------------ */
+@media screen and (max-width: 925px) {
+}
+/* *  ------------------------880px------------------------ */
+@media screen and (max-width: 880px) {
+}
+
+/* *  ------------------------840px------------------------ */
+@media screen and (max-width: 840px) {
+}
+
+/* *  ------------------------805px------------------------ */
+@media screen and (max-width: 805px) {
+}
+
+/* *  ------------------------740px------------------------ */
+@media screen and (max-width: 740px) {
+}
+
+/* *  ------------------------688px------------------------ */
+@media screen and (max-width: 680px) {
+  /* ! Login Page */
+  .form {
+    width: 28rem;
+  }
+}
+
+/* *  ------------------------660px------------------------ */
+@media screen and (max-width: 660px) {
+}
+
+/* *  ------------------------635px------------------------ */
+@media screen and (max-width: 635px) {
+}
+
+/* *  ------------------------620px------------------------ */
+@media screen and (max-width: 620px) {
+}
+
+/* *  ------------------------610px------------------------ */
+@media screen and (max-width: 610px) {
+}
+
+/* *  ------------------------572px------------------------ */
+@media screen and (max-width: 572px) {
+  /* ! Login Page */
+  .form {
+    width: 24rem;
+  }
+}
+
+/* *  ------------------------560px------------------------ */
+@media screen and (max-width: 560px) {
+}
+
+/* *  ------------------------540px------------------------ */
+@media screen and (max-width: 540px) {
+}
+
+/* *  ------------------------530px------------------------ */
+@media screen and (max-width: 530px) {
+}
+
+/* *  ------------------------520px------------------------ */
+@media screen and (max-width: 520px) {
+  /* ! Login Page */
+  .form input {
+    padding: 1rem 5rem;
+  }
+}
+
+/* *  ------------------------500px------------------------ */
+@media screen and (max-width: 500px) {
+  /* ! Login Page */
+  .form {
+    width: 18rem;
+  }
+  .form__user-row-icon,
+  .form__password-row-icon,
+  .form__email-row-icon {
+    right: 3.4rem;
+  }
+  .form-btn {
+    padding: 1rem 4rem;
+  }
+}
+
+/* *  ------------------------450px------------------------ */
+@media screen and (max-width: 450px) {
+}
+
+/* *  ------------------------435px------------------------ */
+@media screen and (max-width: 435px) {
+  /* ! Login Page */
+  .form input {
+    padding: 1rem 2.8rem;
+  }
+  .form__user-row-icon,
+  .form__password-row-icon,
+  .form__email-row-icon {
+    right: 3.4rem;
+  }
+}
+
+/* *  ------------------------414px------------------------ */
+@media screen and (max-width: 414px) {
+  .form {
+    width: 16rem;
+  }
+  .header__title,
+  .form__title {
+    font-size: 2rem;
+  }
+}
+
+/* *  ------------------------400px------------------------ */
+@media screen and (max-width: 400px) {
+}
+
+/* *  ------------------------380px------------------------ */
+@media screen and (max-width: 380px) {
+}
+
+/* *  ------------------------365px------------------------ */
+@media screen and (max-width: 365px) {
+}
+/* *  ------------------------357px------------------------ */
+@media screen and (max-width: 357px) {
+}
+
+/* *  ------------------------336px------------------------ */
+@media screen and (max-width: 336px) {
+}
+
+/* *  ------------------------305px------------------------ */
+@media screen and (max-width: 305px) {
+}
+
+/* *  ------------------------294px------------------------ */
+@media screen and (max-width: 294px) {
+}
+
+/* *  ------------------------240px------------------------ */
+@media screen and (max-width: 240px) {
+}
