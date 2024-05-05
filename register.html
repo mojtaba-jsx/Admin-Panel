@@ -2,8 +2,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>پنل ادمین - ورود</title>
-    <link rel="stylesheet" href="./css/index.css" />
+    <title>پنل ادمین ثبت نام</title>
+    <link rel="stylesheet" href="./css/register.css" />
   </head>
   <body>
     <!-- ! SVG Sprite -->
@@ -82,6 +82,15 @@
         />
       </symbol>
 
+      <symbol
+        id="user-email"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <path
+          d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+        />
+      </symbol>
     </svg>
 
     <header class="header">
@@ -99,9 +108,9 @@
           <svg class="form__title-icon">
             <use href="#login-icon"></use>
           </svg>
-          وارد شوید
+          ثبت نام کنید
         </h2>
-        <h3 class="form__subtitle">وارد شوید و پنل ادمین را مدیریت کنید</h3>
+        <h3 class="form__subtitle">ثبت نام کنید و پنل ادمین را مدیریت کنید</h3>
         <div class="form__user-row">
           <svg class="form__user-row-icon">
             <use href="#user-icon"></use>
@@ -112,6 +121,7 @@
             placeholder="نام کاربری"
           />
         </div>
+
         <div class="form__password-row">
           <svg class="form__password-row-icon">
             <use href="#password-icon"></use>
@@ -122,26 +132,28 @@
             placeholder="گذرواژه"
           />
         </div>
-        <div class="form__reminder">
-          <div class="form__reminder-box">
-            <input type="checkbox" class="form__reminder-box-input" />
-            مرا به خاطر بسپار
-          </div>
-          <div class="form__reminder-forget-password">
-            <a href="./register.html" class="form__reminder-forget-password-link">
-                   ثبت نام نکرده اید ؟  همین الان ثبت نام کن 
-            </a>
-          </div>
+        <div class="form__email-row">
+          <svg class="form__email-row-icon">
+            <use href="#user-email"></use>
+          </svg>
+          <input type="text" class="form__email-input" placeholder="ایمیل" />
         </div>
-        <button class="form-btn">ورود</button>
+
+        <button class="form-btn">ثبت نام</button>
       </form>
     </main>
 
     <footer class="footer">
-        <img class="footer__shape-green" src="./images/shape-green.png" alt="shape">
-        <img class="footer__shape-blue" src="./images/shape-blue.png" alt="shape" >
+      <img
+        class="footer__shape-green"
+        src="./images/shape-green.png"
+        alt="shape"
+      />
+      <img
+        class="footer__shape-blue"
+        src="./images/shape-blue.png"
+        alt="shape"
+      />
     </footer>
-
-    <script src="./scripts/index.js"></script>
   </body>
 </html>
