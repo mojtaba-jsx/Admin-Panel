@@ -1,0 +1,29 @@
+/* ! Imports */
+@import "./reset.css";
+@import "./fonts.css";
+
+:root {
+  --mercury: #e5e5e5;
+  --blueDianne: #224957;
+  --aquaGreen: #20df7f;
+  --white: #ffffff;
+  --black: #000000;
+}
+.title {
+  font-family: "diplomat", Courier, monospace;
+  font-size: 14rem;
+}
+.svg-box {
+  display: none;
+}
+
+body {
+  background-color: var(--mercury);
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.svg-sprite{
+    display: none;
+}
