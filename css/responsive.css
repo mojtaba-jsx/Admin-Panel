@@ -2,6 +2,11 @@
 
 /* *  ------------------------1400px------------------------ */
 @media screen and (max-width: 1400px) {
+  /* ! Header Section */
+  .header{
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
 }
 
 /* *  ------------------------1280px------------------------ */
@@ -62,6 +67,18 @@
 
 /* *  ------------------------740px------------------------ */
 @media screen and (max-width: 740px) {
+   /* ! Header Section */
+  .header__wrapper{
+    flex-direction: column;
+  }
+  .header__left{
+    width: 20rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .header__right{
+    margin: 0 auto;
+  }
 }
 
 /* *  ------------------------688px------------------------ */
@@ -136,6 +153,17 @@
   .form-btn {
     padding: 1rem 4rem;
   }
+   /* ! Header Section */
+.header__left{
+  width: 15rem;
+}
+.header__right__exit{
+  flex-direction: column;
+}
+.header__right__exit svg {
+  width: 2rem;
+  height: 2rem;
+}
 }
 
 /* *  ------------------------450px------------------------ */
