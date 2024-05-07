@@ -59,9 +59,8 @@ body {
   margin-left: 1rem;
   font-size: 1.2rem;
 }
-.header__left__infos span{
-   text-transform: capitalize;
-
+.header__left__infos span {
+  text-transform: capitalize;
 }
 
 .header__left-image-img {
@@ -75,6 +74,7 @@ body {
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius: 1rem;
   padding: 1rem;
+  margin-left: 1.2rem;
 }
 
 .header__right {
