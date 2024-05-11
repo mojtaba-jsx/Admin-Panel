@@ -1,4 +1,4 @@
-<html lang="en" dir="rtl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,6 +23,7 @@
           d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
         />
       </symbol>
+
       <symbol
         id="exit-icon"
         xmlns="http://www.w3.org/2000/svg"
@@ -38,6 +39,7 @@
           d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15"
         />
       </symbol>
+
       <symbol
         id="user-icon"
         xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +55,7 @@
           d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
         />
       </symbol>
+
       <symbol
         id="course-icon"
         xmlns="http://www.w3.org/2000/svg"
@@ -62,6 +65,10 @@
           d="M160 64c0-35.3 28.7-64 64-64H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H336.8c-11.8-25.5-29.9-47.5-52.4-64H384V320c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v32h64V64L224 64v49.1C205.2 102.2 183.3 96 160 96V64zm0 64a96 96 0 1 1 0 192 96 96 0 1 1 0-192zM133.3 352h53.3C260.3 352 320 411.7 320 485.3c0 14.7-11.9 26.7-26.7 26.7H26.7C11.9 512 0 500.1 0 485.3C0 411.7 59.7 352 133.3 352z"
         />
       </symbol>
+      <symbol id="pen-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+      </symbol>
+      
     </svg>
 
     <header class="header">
@@ -88,7 +95,7 @@
               </svg>
             </span>
             <span class="header__right__exit">
-              خروج از پنل ادمین
+               Exit Panel  
 
               <svg>
                 <use href="#exit-icon"></use>
@@ -102,7 +109,57 @@
     <main class="main">
       <div class="container">
         <div class="main__wrapper">
+          <section class="user-info">
+            <div class="user-info__top">
+              <img src="./images/banana.png" alt="user" class="user-info__top-image">
+            </div>
 
+            <div class="user-info__bottom">
+              <div class="user-info__bottom-user">
+                <span class="user-info__bottom-user-name">Banana</span>
+                <span class="user-info__bottom-user-mail">Banana@gmail.com</span>
+              </div>
+
+              <div class="user-info__bottom__all-info">
+                <div class="user-info__bottom__all-info__name">
+                  <span class="user-info__bottom__all-info__name-text">
+                    First Name
+                  </span>
+                  <span class="user-info__bottom__all-info__name-value">
+                    Mojtaba
+                  </span>
+                </div>
+
+                <div class="user-info__bottom__all-info__last-name">
+                  <span class="user-info__bottom__all-info__last-name-text">
+                    LastName
+                  </span>
+                  <span class="user-info__bottom__all-info__last-name-value">
+                    Nayyeri
+                  </span>
+                </div>
+
+                <div class="user-info__bottom__all-info__courses">
+                  <span class="user-info__bottom__all-info__courses-text">
+                    Courses
+                  </span>
+                  <span class="user-info__bottom__all-info__courses-value">
+                    40
+                  </span>
+                </div>
+              </div>
+              <button class="user-info__bottom-btn">
+                <svg>
+                  <use href="#pen-icon"></use>
+                </svg>
+                Change Information
+              </button>
+            </div>
+          </section>
+          <!-- ! ///////// -->
+          <section class="tabs">
+b
+          </section>
         </div>
       </div>
     </main>
