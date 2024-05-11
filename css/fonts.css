@@ -1,5 +1,17 @@
 /* !Fonts */
 @font-face {
-    font-family: 'diplomat';
-    src: url('../fonts/Far_Diplomat.ttf');
+    font-family: 'josefin-bold';
+    src: url('../fonts/JosefinSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'josefin-medium';
+    src: url('../fonts/JosefinSans-Medium.ttf');
+}
+@font-face {
+    font-family: 'josefin-light';
+    src: url('../fonts/JosefinSans-Light.ttf');
+}
+@font-face {
+    font-family: 'josefin-regular';
+    src: url('../fonts/JosefinSans-Regular.ttf');
 }
