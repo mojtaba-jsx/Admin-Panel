@@ -143,7 +143,7 @@ body {
 
 .tabs {
   width: 75%;
-  background-color: blue;
+  /* background-color: blue; */
   margin-top: 1rem;
 }
 /* ! User Section */
@@ -237,4 +237,27 @@ body {
 .user-info__bottom-btn svg{
   width: 2rem;
   height: 2rem;
+}
+
+/*!  Tabs Section */
+
+.tabs__list{
+  display: flex;
+  justify-content: space-around;
+}
+.tabs__list svg{
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--black);
+}
+
+.tabs__list__item-link{
+  display: flex;
+  align-items: center;
+  font-family: "josefin-bold", Courier, monospace;
+  color: var(--black);
+
+}
+.tabs__list__item-link svg {
+  margin-right: 1rem;
 }
