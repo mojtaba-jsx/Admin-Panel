@@ -123,9 +123,29 @@
         />
       </symbol>
 
-      <symbol id="session-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <symbol
+        id="session-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
         <path
           d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"
+        />
+      </symbol>
+
+      <symbol
+        id="search-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
         />
       </symbol>
     </svg>
@@ -261,8 +281,131 @@
             </div>
 
             <section class="users">
-              
+              <div class="users__searchbox">
+                <input
+                  type="text"
+                  class="users__searchbox-input"
+                  placeholder="Search User ID"
+                />
+                <button class="users__searchbox-btn">
+                  Search
+                  <svg>
+                    <use href="#search-icon"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="users__list">
+                <div class="users__list__item">
+                  <div class="users__list__item-left">
+                    <div class="users__list__item-left--left">
+                      <img
+                        src="./images/banana.png"
+                        alt="image"
+                        class="users__list__item-left--left-img"
+                      />
+                    </div>
+                    <div class="users__list__item-left--right">
+                      <span class="users__list__item-left--right-username"
+                        >Banana</span
+                      >
+                      <span class="users__list__item-left--right-user-info"
+                        >Mojtaba nayyeri</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="users__list__item-right">
+                    <button class="users__list__item-right-edit">Edit</button>
+                    <button class="users__list__item-right-remove">
+                      Remove
+                    </button>
+                  </div>
+                </div>
+
+                <div class="users__list__item">
+                  <div class="users__list__item-left">
+                    <div class="users__list__item-left--left">
+                      <img
+                        src="./images/banana.png"
+                        alt="image"
+                        class="users__list__item-left--left-img"
+                      />
+                    </div>
+                    <div class="users__list__item-left--right">
+                      <span class="users__list__item-left--right-username"
+                        >Banana</span
+                      >
+                      <span class="users__list__item-left--right-user-info"
+                        >Mojtaba nayyeri</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="users__list__item-right">
+                    <button class="users__list__item-right-edit">Edit</button>
+                    <button class="users__list__item-right-remove">
+                      Remove
+                    </button>
+                  </div>
+                </div>
+
+                <div class="users__list__item">
+                  <div class="users__list__item-left">
+                    <div class="users__list__item-left--left">
+                      <img
+                        src="./images/banana.png"
+                        alt="image"
+                        class="users__list__item-left--left-img"
+                      />
+                    </div>
+                    <div class="users__list__item-left--right">
+                      <span class="users__list__item-left--right-username"
+                        >Banana</span
+                      >
+                      <span class="users__list__item-left--right-user-info"
+                        >Mojtaba nayyeri</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="users__list__item-right">
+                    <button class="users__list__item-right-edit">Edit</button>
+                    <button class="users__list__item-right-remove">
+                      Remove
+                    </button>
+                  </div>
+                </div>
+
+                <div class="users__list__item">
+                  <div class="users__list__item-left">
+                    <div class="users__list__item-left--left">
+                      <img
+                        src="./images/banana.png"
+                        alt="image"
+                        class="users__list__item-left--left-img"
+                      />
+                    </div>
+                    <div class="users__list__item-left--right">
+                      <span class="users__list__item-left--right-username"
+                        >Banana</span
+                      >
+                      <span class="users__list__item-left--right-user-info"
+                        >Mojtaba nayyeri</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="users__list__item-right">
+                    <button class="users__list__item-right-edit">Edit</button>
+                    <button class="users__list__item-right-remove">
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </div>
             </section>
+            
           </section>
         </div>
       </div>
