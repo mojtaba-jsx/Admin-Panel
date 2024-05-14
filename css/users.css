@@ -1,6 +1,8 @@
 /* ! Imports */
 @import "./reset.css";
 @import "./fonts.css";
+@import "./header.css";
+@import "./side-info.css";
 
 :root {
   --mercury: #e5e5e5;
@@ -30,101 +32,6 @@ body {
   display: none;
 }
 
-/* ! ////////Header Section//////// */
-
-.header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
-  padding: 0.5rem;
-  border-radius: 2rem;
-  background: rgb(146, 254, 157);
-  background: linear-gradient(
-    90deg,
-    rgba(146, 254, 157, 1) 0%,
-    rgba(0, 201, 255, 1) 100%
-  );
-}
-
-.header__left {
-  display: flex;
-  align-items: center;
-  transition: all 140ms ease-in;
-  padding: 1rem;
-  border-radius: 1rem;
-}
-.header__left:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-.header__left__infos {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-family: "josefin-medium", Courier, monospace;
-  margin-left: 1rem;
-  font-size: 1.2rem;
-}
-
-.header__left__infos-username {
-  text-align: start;
-}
-
-.header__left__infos span:nth-child(1) {
-  text-transform: capitalize;
-}
-
-.header__left-image-img {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 1rem;
-}
-.header__right__dark-light {
-  margin-right: 2rem;
-
-  border-radius: 1rem;
-  padding: 1rem;
-  margin-left: 1.2rem;
-  transition: all 140ms ease-in;
-  cursor: pointer;
-}
-.header__right__dark-light:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.header__right {
-  display: flex;
-  align-items: center;
-}
-
-.header__right__dark-light svg {
-  width: 2.8rem;
-  height: 2.8rem;
-  color: gold;
-}
-
-.header__right__exit svg {
-  width: 2.8rem;
-  height: 2.8rem;
-}
-
-.header__right__exit {
-  display: flex;
-  align-items: center;
-  font-family: "josefin-regular", Courier, monospace;
-  font-size: 1.2rem;
-  /* background-color: #111219; */
-  padding: 1rem;
-  border-radius: 1rem;
-  transition: all 140ms ease-in;
-  cursor: pointer;
-}
-.header__right__exit:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
 /* ! ////////Main Section//////// */
 
 .main__wrapper {
@@ -147,98 +54,6 @@ body {
   width: 75%;
   /* background-color: blue; */
   margin-top: 1rem;
-}
-/* ! User Section */
-.user-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 32rem;
-  margin-top: 0.5rem;
-}
-
-.user-info__top-image {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 1rem;
-  display: block;
-  margin: 0 auto;
-  margin-top: 6rem;
-  border-radius: 1rem;
-  transition: all 140ms ease-in;
-}
-.user-info__top-image:hover {
-  transform: scale(1.1);
-}
-
-.user-info__top {
-  width: 100%;
-  height: 40%;
-  background-image: url("../images/bitcoin-robot.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-
-.user-info__bottom {
-  margin-top: 2.2rem;
-}
-
-.user-info__bottom-user {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "josefin-bold", Courier, monospace;
-  font-size: 1.2rem;
-}
-
-.user-info__bottom__all-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.user-info__bottom__all-info div {
-  width: 100%;
-}
-
-.user-info__bottom__all-info__name,
-.user-info__bottom__all-info__last-name,
-.user-info__bottom__all-info__courses {
-  display: flex;
-  justify-content: space-around;
-  /* margin-bottom: 1rem; */
-  margin-top: 1rem;
-  font-family: "josefin-regular", Courier, monospace;
-  font-size: 1.2rem;
-  border-top: 1px solid black;
-  padding-top: 1rem;
-}
-
-.user-info__bottom-btn {
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-  font-size: 1.1rem;
-  display: flex;
-  align-items: center;
-  font-family: "josefin-bold", Courier, monospace;
-  border: none;
-  outline: none;
-  border-radius: 1rem;
-  background-color: var(--aquaGreen);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  cursor: pointer;
-  transition: all 140ms ease-in;
-}
-.user-info__bottom-btn:hover {
-  box-shadow: none;
-}
-.user-info__bottom-btn svg {
-  width: 2rem;
-  height: 2rem;
 }
 
 /*!  Tabs Section */
