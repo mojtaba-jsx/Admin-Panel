@@ -1,0 +1,190 @@
+/* ! Imports */
+@import "./reset.css";
+@import "./fonts.css";
+@import "./header.css";
+@import "./side-info.css";
+
+:root {
+  --mercury: #e5e5e5;
+  --blueDianne: #224957;
+  --aquaGreen: #20df7f;
+  --white: #ffffff;
+  --black: #111219;
+  --strawberry: #ff204e;
+  --pattensBlue: #dff5ff;
+}
+.title {
+  font-size: 14rem;
+}
+.svg-box {
+  display: none;
+}
+
+body {
+  background-color: var(--pattensBlue);
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.svg-sprite {
+  display: none;
+}
+
+/* ! information Section */
+.inforamtion {
+  padding-top: 0.5rem;
+  height: 22rem;
+  overflow-y: scroll;
+  padding-bottom: 2rem;
+}
+.inforamtion::-webkit-scrollbar {
+  background-color: var(--pattensBlue);
+}
+.inforamtion::-webkit-scrollbar-thumb {
+  background-color: var(--aquaGreen);
+  border-radius: 1rem;
+}
+.inforamtion__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inforamtion__form__row1__inputs,
+.inforamtion__form__row2__inputs {
+  display: flex;
+  justify-content: space-around;
+}
+.inforamtion__form__row1__inputs-1,
+.inforamtion__form__row1__inputs-2,
+.inforamtion__form__row2__inputs-1,
+.inforamtion__form__row2__inputs-2,
+.inforamtion__form__row2__inputs-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inforamtion__form__row3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.inforamtion input {
+  padding: 1.2rem;
+  width: 30rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  background-color: var(--blueDianne);
+  color: var(--white);
+  font-size: 1.2rem;
+}
+.inforamtion input::placeholder {
+  color: var(--white);
+  font-family: "josefin-medium", Courier, monospace;
+  font-size: 1.2rem;
+}
+
+.inforamtion__form__row2 input {
+  width: 20rem;
+  background-color: var(--blueDianne);
+  color: var(--white);
+  font-family: "josefin-medium", Courier, monospace;
+  font-size: 1.2rem;
+}
+
+.inforamtion__form__row3 input {
+  width: 100%;
+  background-color: var(--blueDianne);
+  font-family: "josefin-medium", Courier, monospace;
+  font-size: 1.2rem;
+}
+
+.inforamtion__form__row1 span {
+  margin-top: 1rem;
+  font-family: "josefin-medium", Courier, monospace;
+}
+.inforamtion__form__row2 span {
+  margin-top: 1rem;
+  font-family: "josefin-medium", Courier, monospace;
+}
+
+.inforamtion__form div {
+  height: 10rem;
+}
+
+.inforamtion__form__row2-title,
+.inforamtion__form__row1-title,
+.inforamtion__form__row3-title {
+  font-size: 1.2rem;
+  font-family: "josefin-medium", Courier, monospace;
+}
+
+.inforamtion__form__row3-input-title {
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-family: "josefin-medium", Courier, monospace;
+}
+.inforamtion__form-btn {
+  width: 20rem;
+  padding: 1rem;
+  margin: 0 auto;
+  /* margin-top: 1rem; */
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  font-family: "josefin-bold", Courier, monospace;
+  background-color: var(--aquaGreen);
+  color: var(--black);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  cursor: pointer;
+  transition: all 140ms ease-in;
+  transition: all 140ms ease-in;
+}
+
+.inforamtion__form-btn:hover {
+  box-shadow: none;
+}
+
+.inforamtion__form__row1__input1-title,
+.inforamtion__form__row1__input2-title,
+.inforamtion__form__row2__input1-title,
+.inforamtion__form__row2__input2-title,
+.inforamtion__form__row2__input3-title,
+.inforamtion__form__row3-input-title {
+  display: none;
+}
+
+.inforamtion__form__row1__inputs-1,
+.inforamtion__form__row1__inputs-2,
+.inforamtion__form__row2__inputs-1,
+.inforamtion__form__row2__inputs-2,
+.inforamtion__form__row2__inputs-3,.inforamtion__form__row3 {
+  position: relative;
+}
+.inforamtion__form__row1__inputs-1-icon,
+.inforamtion__form__row1__inputs-2-icon,
+.inforamtion__form__row2__inputs-1-icon,
+.inforamtion__form__row2__inputs-2-icon,
+.inforamtion__form__row2__inputs-3-icon {
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  right: 1rem;
+  top: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.inforamtion__form__row3-icon{
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  right: 1rem;
+  top: 2.6rem;
+  color: var(--white);
+}
