@@ -44,6 +44,7 @@ body {
 .inforamtion::-webkit-scrollbar-thumb {
   background-color: var(--aquaGreen);
   border-radius: 1rem;
+
 }
 .inforamtion__form {
   display: flex;
@@ -127,6 +128,7 @@ body {
   margin-top: 1rem;
   font-family: "josefin-medium", Courier, monospace;
 }
+
 .inforamtion__form-btn {
   width: 20rem;
   padding: 1rem;
@@ -166,6 +168,8 @@ body {
 .inforamtion__form__row2__inputs-3,.inforamtion__form__row3 {
   position: relative;
 }
+
+
 .inforamtion__form__row1__inputs-1-icon,
 .inforamtion__form__row1__inputs-2-icon,
 .inforamtion__form__row2__inputs-1-icon,
@@ -179,6 +183,7 @@ body {
   color: var(--white);
   cursor: pointer;
 }
+
 
 .inforamtion__form__row3-icon{
   position: absolute;

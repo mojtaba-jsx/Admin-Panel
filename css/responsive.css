@@ -3,28 +3,28 @@
 /* *  ------------------------1400px------------------------ */
 @media screen and (max-width: 1400px) {
   /* ! Header Section */
-  .header{
+  .header {
     margin-right: 2rem;
     margin-left: 2rem;
   }
   /*! Users Section */
-  .main__wrapper{
+  .main__wrapper {
     flex-direction: column;
   }
-  .user-info{
+  .user-info {
     width: 80%;
     margin: 0 auto;
     margin-top: 1rem;
   }
-  .tabs{
+  .tabs {
     width: 80%;
     margin: 0 auto;
     margin-top: 2rem;
   }
-  .user-info__bottom{
+  .user-info__bottom {
     width: 100%;
   }
-  .user-info__bottom-btn{
+  .user-info__bottom-btn {
     margin: 0 auto;
     margin-top: 0.5rem;
   }
@@ -36,6 +36,16 @@
 
 /* *  ------------------------1255px------------------------ */
 @media screen and (max-width: 1255px) {
+  /* ! Information Section */
+  .inforamtion__form__row1__inputs {
+    flex-direction: column;
+  }
+  .inforamtion__form input {
+    width: 100%;
+  }
+  .inforamtion__form__row2{
+    margin-top: 4rem;
+  }
 }
 
 /* *  ------------------------1230px------------------------ */
@@ -53,6 +63,26 @@
 
 /* *  ------------------------980px------------------------ */
 @media screen and (max-width: 980px) {
+    /* ! Information Section */
+    .inforamtion__form__row1__inputs {
+      flex-direction: column;
+    }
+    .inforamtion__form input {
+      width: 100%;
+    }
+    .inforamtion__form__row2 input{
+      width: 100%;
+    }
+    .inforamtion{
+      padding: 1rem;
+    }
+    .inforamtion__form__row2__inputs{
+      flex-direction: column;
+    }
+    .inforamtion__form__row3{
+      margin-top: 8rem;
+    }
+
 }
 
 /* *  ------------------------945px------------------------ */
@@ -84,33 +114,33 @@
 
 /* *  ------------------------805px------------------------ */
 @media screen and (max-width: 805px) {
-    /*! Users Section */
-    .users__list__item{
-      flex-direction: column;
-    }
-    .users__list__item-left{
-      margin-bottom: 1rem;
-    }
-    .tabs__list{
-      flex-wrap: wrap;
-    }
-    .tabs__list__item{
-      margin-bottom: 1rem;
-    }
+  /*! Users Section */
+  .users__list__item {
+    flex-direction: column;
+  }
+  .users__list__item-left {
+    margin-bottom: 1rem;
+  }
+  .tabs__list {
+    flex-wrap: wrap;
+  }
+  .tabs__list__item {
+    margin-bottom: 1rem;
+  }
 }
 
 /* *  ------------------------740px------------------------ */
 @media screen and (max-width: 740px) {
-   /* ! Header Section */
-  .header__wrapper{
+  /* ! Header Section */
+  .header__wrapper {
     flex-direction: column;
   }
-  .header__left{
+  .header__left {
     width: 20rem;
     margin: 0 auto;
     margin-bottom: 2rem;
   }
-  .header__right{
+  .header__right {
     margin: 0 auto;
   }
 }
@@ -157,12 +187,12 @@
 
 /* *  ------------------------530px------------------------ */
 @media screen and (max-width: 530px) {
-    .form__reminder{
-        flex-direction: column;
-    }
-    .form__reminder-box{
-        margin-bottom: 2rem;
-    }
+  .form__reminder {
+    flex-direction: column;
+  }
+  .form__reminder-box {
+    margin-bottom: 2rem;
+  }
 }
 
 /* *  ------------------------520px------------------------ */
@@ -171,6 +201,11 @@
   .form input {
     padding: 1rem 5rem;
   }
+    /* ! Information Section */
+.inforamtion__form-btn{
+  width: 12rem;
+  font-size: 1.2rem;
+}
 }
 
 /* *  ------------------------500px------------------------ */
@@ -187,27 +222,27 @@
   .form-btn {
     padding: 1rem 4rem;
   }
-   /* ! Header Section */
-.header__left{
-  width: 15rem;
-}
-.header__right__exit{
-  flex-direction: column;
-}
-.header__right__exit svg {
-  width: 2rem;
-  height: 2rem;
-}
-    /*! Users Section */
-  .users__list__item-right{
+  /* ! Header Section */
+  .header__left {
+    width: 15rem;
+  }
+  .header__right__exit {
     flex-direction: column;
   }
-  .users__list__item-right-edit{
+  .header__right__exit svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  /*! Users Section */
+  .users__list__item-right {
+    flex-direction: column;
+  }
+  .users__list__item-right-edit {
     display: block;
     margin: 0 auto;
     margin-bottom: 1rem;
   }
-  .users__searchbox-btn{
+  .users__searchbox-btn {
     width: 8rem;
     flex-direction: column;
   }
