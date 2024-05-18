@@ -59,6 +59,14 @@
 
 /* *  ------------------------1140px------------------------ */
 @media screen and (max-width: 1140px) {
+  /* ! Courses Section */
+  .courses__item__right__bottom{
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .courses__item__left-image{
+    height: 100%;
+  }
 }
 
 /* *  ------------------------980px------------------------ */
@@ -95,6 +103,21 @@
 
 /* *  ------------------------910px------------------------ */
 @media screen and (max-width: 910px) {
+  /* ! Courses Section */
+  .courses__item{
+    flex-direction: column;
+  }
+  .courses__item__left{
+    width: 100%;
+  }
+  .courses__item__right{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .courses__item__right__bottom__left{
+    flex-direction: column;
+  }
 }
 
 /* *  ------------------------900px------------------------ */
@@ -183,6 +206,13 @@
 
 /* *  ------------------------540px------------------------ */
 @media screen and (max-width: 540px) {
+  /* ! Courses Section */
+  .courses__item__right__bottom__left-price,.courses__item__right__bottom__left-category,.courses__item__right__bottom__right-users{
+    font-size: 1.2rem;
+  }
+  .courses-btn{
+    width: 12rem;
+  }
 }
 
 /* *  ------------------------530px------------------------ */
