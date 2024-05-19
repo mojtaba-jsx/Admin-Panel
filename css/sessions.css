@@ -175,3 +175,45 @@ body {
   justify-content: space-around;
   margin-top: 1rem;
 }
+
+
+.session-item{
+  width:25rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--sandyYellow);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--blueDianne) 0px 0.0625em 0.0625em, var(--blueDianne) 0px 0.125em 0.5em, var(--blueDianne) 0px 0px 0px 1px inset;
+  
+}
+.session-item svg{
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+.session-item div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.session-item__name-text,
+.session-item__time-text,
+.session-item__price-text,
+.session-item__course-text{
+  display: flex;
+  align-items: center;
+  font-family: "josefin-bold", Courier, monospace;
+  font-size: 1.4rem;
+}
+
+.session-item__name-value,
+.session-item__time-value,
+.session-item__price-value,
+.session-item__course-value{
+  font-family: "josefin-medium", Courier, monospace;
+  font-size: 1.2rem;
+}
