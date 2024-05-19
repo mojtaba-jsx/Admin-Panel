@@ -168,7 +168,14 @@ body {
 }
 
 /* ! Session List */
-
+.sessions__list-title{
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: "josefin-bold", Courier, monospace;
+  color: var(--aquaGreen);
+  color: var(--blueDianne);
+}
 .session__list-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -179,8 +186,10 @@ body {
 
 .session-item{
   width:25rem;
+  /* height: 16rem; */
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   background-color: var(--sandyYellow);
   padding: 1rem;
   border-radius: 1rem;

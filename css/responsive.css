@@ -46,6 +46,21 @@
   .inforamtion__form__row2{
     margin-top: 4rem;
   }
+  /* ! Sessions Section */
+  .sessions-form__row1,.sessions-form__row2{
+    flex-direction: column;
+  }
+  .sessions-form__row1 div ,.sessions-form__row2 div{
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .sessions-form__row1 div input ,.sessions-form__row2 div input{
+    width: 100%;
+
+  }
+  .sessions-form__row2-course-select{
+    width: 100%;
+  }
 }
 
 /* *  ------------------------1230px------------------------ */
@@ -197,6 +212,14 @@
   /* ! Login Page */
   .form {
     width: 24rem;
+  }
+  /* ! Sessions Section */
+  .session-item div {
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .session-item div span {
+    margin-bottom: 1rem;
   }
 }
 
