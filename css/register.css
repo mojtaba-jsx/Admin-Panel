@@ -79,7 +79,7 @@ body {
 }
 .form__user-row,
 .form__password-row,
-.form__email-row {
+.form__email-row,.form__firstname-row,.form__lastname-row {
   display: flex;
   align-items: center;
   justify-content: center;
