@@ -188,3 +188,7 @@ body {
   background-color: var(--strawberry);
   color: var(--white);
 }
+
+.users__list__item-left--right-user-info{
+  text-transform: capitalize;
+}
