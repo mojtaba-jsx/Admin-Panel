@@ -192,3 +192,55 @@ body {
 .users__list__item-left--right-user-info{
   text-transform: capitalize;
 }
+
+/*! User Delete Modal */
+.users{
+  position: relative;
+}
+.users-modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 30rem;
+  background-color: var(--blueDianne);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.users-modal-title{
+  font-family: "josefin-bold", Courier, monospace;
+  font-size: 1.2rem;
+  color: var(--white);
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+.users-modal-btns{
+  margin-top: 2rem;
+}
+
+.users-modal-yes,.users-modal-no{
+  padding: 1rem 4rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  font-family: "josefin-bold", Courier, monospace;
+  font-size: 1.2rem;
+  color: var(--white);
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.users-modal-yes{
+ background-color: var(--aquaGreen);
+
+}
+
+.users-modal-no{
+  background-color: var(--strawberry);
+}
+

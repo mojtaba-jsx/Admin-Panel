@@ -1,5 +1,6 @@
 let usersList = document.querySelector('.users__list');
 
+// ! Get Users Info From Api 
 window.addEventListener('load',()=>{
     fetch('http://localhost:3000/api/users')
     .then(res=>res.json())
@@ -28,7 +29,7 @@ window.addEventListener('load',()=>{
             
             <div class="users__list__item-right">
               <button class="users__list__item-right-edit">Edit</button>
-              <button class="users__list__item-right-remove">
+              <button onclick='deleteUserHandler(${user._id})' class="users__list__item-right-remove">
                 Remove
               </button>
             </div>
@@ -38,6 +39,10 @@ window.addEventListener('load',()=>{
     })
 })
 
+// ! Delete User From List
 
 
 
+function deleteUserHandler (userID){
+  console.log(userID);
+}
