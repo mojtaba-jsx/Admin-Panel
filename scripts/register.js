@@ -3,20 +3,21 @@ let formUsernameInput = document.querySelector(".form__username-input");
 let formPasswordInput = document.querySelector(".form__password-input");
 let formEmailInput = document.querySelector(".form__email-input");
 
-let formFirstnameInput = document.querySelector('.form__firstname-input')
-let formLastnameInput = document.querySelector('.form__lastname-input')
+let formFirstnameInput = document.querySelector(".form__firstname-input");
+let formLastnameInput = document.querySelector(".form__lastname-input");
 let formBtn = document.querySelector(".form-btn");
 
 formBtn.addEventListener("click", (event) => {
   event.preventDefault();
   if (
     formUsernameInput.value.length < 4 ||
-    !validateEmail(formEmailInput.value)
+    formFirstnameInput.value.length < 4 ||
+    formLastnameInput.value.length < 4
   ) {
     iziToast.show({
       title: "Error",
       message:
-        "Please fill in the fields correctly (enter username and password more than 4 characters and email in the correct form)",
+        "Please fill in the fields correctly (Enter FirstName and LanstName And UserName More Than 4 Characters )",
       position: "topCenter",
       titleSize: "20px",
       messageSize: "16px",
@@ -37,8 +38,8 @@ formBtn.addEventListener("click", (event) => {
     });
     // ! Info Of User
     let newUserData = {
-      firstName:formFirstnameInput.value,
-      lastName:formLastnameInput.value,
+      firstName: formFirstnameInput.value,
+      lastName: formLastnameInput.value,
       userName: formUsernameInput.value,
       profile: "https://imgurl.ir/uploads/e561633_banana.png",
     };
@@ -49,7 +50,7 @@ formBtn.addEventListener("click", (event) => {
       },
       body: JSON.stringify(newUserData),
     }).then((res) => console.log(res));
-    clearInputs()
+    clearInputs();
   }
 });
 
@@ -60,7 +61,7 @@ function validateEmail(email) {
 }
 
 function clearInputs() {
-  formUsernameInput.value = "";
-  formPasswordInput.value = "";
-  formEmailInput.value = "";
+  (formFirstnameInput.value = ""),
+    (formLastnameInput.value = ""),
+    (formUsernameInput.value = "");
 }
