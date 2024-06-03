@@ -1,13 +1,16 @@
-let usersList = document.querySelector('.users__list');
+let usersList = document.querySelector(".users__list");
+let mainUserID = null;
+// ! Get Users Info From Api
+window.addEventListener("load", getUsersInfo);
 
-// ! Get Users Info From Api 
-window.addEventListener('load',()=>{
-    fetch('http://localhost:3000/api/users')
-    .then(res=>res.json())
-    .then(data=>{
-        data.forEach((user)=>{
-            console.log(user);
-            usersList.insertAdjacentHTML('beforeend',`
+function getUsersInfo() {
+  fetch("http://localhost:3000/api/users")
+    .then((res) => res.json())
+    .then((data) => {
+      data.forEach((user) => {
+        usersList.insertAdjacentHTML(
+          "beforeend",
+          `
             <div class="users__list__item">
             <div class="users__list__item-left">
               <div class="users__list__item-left--left">
@@ -29,20 +32,33 @@ window.addEventListener('load',()=>{
             
             <div class="users__list__item-right">
               <button class="users__list__item-right-edit">Edit</button>
-              <button onclick='deleteUserHandler(${user._id})' class="users__list__item-right-remove">
+              <button onclick="showDeleteModal('${user._id}')" class="users__list__item-right-remove">
                 Remove
               </button>
             </div>
             </div> 
-            `)
-        })
-    })
-})
+            `
+        );
+      });
+    });
+}
 
 // ! Delete User From List
+let usersModal = document.querySelector(".users-modal");
+function showDeleteModal(userID) {
+  mainUserID = userID;
+  usersModal.classList.add("users-modal-visible");
+}
 
-
-
-function deleteUserHandler (userID){
-  console.log(userID);
+function closeDeleteModal() {
+  usersModal.classList.remove("users-modal-visible");
+}
+function deleteUser() {
+  fetch(`http://localhost:3000/api/users/${mainUserID}`, {
+    method: "DELETE",
+  }).then((res) => {
+    console.log(res);
+    closeDeleteModal();
+    location.reload();
+  });
 }
