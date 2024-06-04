@@ -31,7 +31,7 @@ function getUsersInfo() {
             </div>
             
             <div class="users__list__item-right">
-              <button class="users__list__item-right-edit">Edit</button>
+              <button class="users__list__item-right-edit" onclick="showEditModal('${user._id}')">Edit</button>
               <button onclick="showDeleteModal('${user._id}')" class="users__list__item-right-remove">
                 Remove
               </button>
@@ -59,6 +59,61 @@ function deleteUser() {
   }).then((res) => {
     console.log(res);
     closeDeleteModal();
+    location.reload();
+  });
+}
+
+// ! Edit Modal Logic
+let usersEditModal = document.querySelector(".users-edit-modal");
+let userEditModalUpdateBtn = document.querySelector(
+  ".users-edit-modal__form-btns-update"
+);
+let userEditModalCencelBtn = document.querySelector(
+  ".users-edit-modal__form-btns-cancel"
+);
+let userNameInput = document.querySelector(
+  ".users-edit-modal__form-username-input"
+);
+let firstNameinput = document.querySelector(
+  ".users-edit-modal__form-firstname-input"
+);
+let lastNameInput = document.querySelector(
+  ".users-edit-modal__form-lastname-input"
+);
+
+// ! Show Edit Modal
+function showEditModal(userID) {
+  usersEditModal.classList.add("show-edit-modal");
+
+  mainUserID = userID;
+  console.log(mainUserID);
+}
+
+// ! Hide Edit Modal
+userEditModalCencelBtn.addEventListener("click", closeEditmodal);
+function closeEditmodal() {
+  usersEditModal.classList.remove("show-edit-modal");
+}
+
+userEditModalUpdateBtn.addEventListener("click", updateUser);
+function updateUser() {
+  let userInfo = {
+    firstName: firstNameinput.value,
+    lastName: lastNameInput.value,
+    userName: userNameInput.value,
+    profile: "https://imgurl.ir/uploads/e561633_banana.png",
+  };
+  console.log(userInfo);
+  console.log("updated");
+  fetch(`http://localhost:3000/api/users/${mainUserID}`, {
+    method: "PUT",
+    headers: {
+      "Content-type": "application/json",
+    },
+    body: JSON.stringify(userInfo),
+  }).then((res) => {
+    console.log(res);
+    closeEditmodal();
     location.reload();
   });
 }

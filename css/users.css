@@ -189,15 +189,15 @@ body {
   color: var(--white);
 }
 
-.users__list__item-left--right-user-info{
+.users__list__item-left--right-user-info {
   text-transform: capitalize;
 }
 
 /*! User Delete Modal */
-.users{
+.users {
   position: relative;
 }
-.users-modal{
+.users-modal {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,15 +209,17 @@ body {
   transform: translate(-50%, -50%);
   padding: 1rem;
   border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
   display: none;
 }
 
-.users-modal-visible{
+.users-modal-visible {
   display: flex;
 }
 
-.users-modal-title{
+.users-modal-title {
   font-family: "josefin-bold", Courier, monospace;
   font-size: 1.2rem;
   color: var(--white);
@@ -225,11 +227,12 @@ body {
   line-height: 1.4rem;
 }
 
-.users-modal-btns{
+.users-modal-btns {
   margin-top: 2rem;
 }
 
-.users-modal-yes,.users-modal-no{
+.users-modal-yes,
+.users-modal-no {
   padding: 1rem 4rem;
   border: none;
   outline: none;
@@ -240,12 +243,94 @@ body {
   margin-right: 1rem;
   cursor: pointer;
 }
-.users-modal-yes{
- background-color: var(--aquaGreen);
-
+.users-modal-yes {
+  background-color: var(--aquaGreen);
 }
 
-.users-modal-no{
+.users-modal-no {
   background-color: var(--strawberry);
 }
 
+/*! User Edit Modal */
+.users-edit-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  /* height: 20rem; */
+  background-color: var(--blueDianne);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    display: none;
+}
+
+.show-edit-modal {
+  display: flex;
+}
+
+
+.users-edit-modal__title {
+  font-family: "josefin-bold", Courier, monospace;
+  color: var(--white);
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  text-align: center;
+  color: var(--aquaGreen);
+}
+
+.users-edit-modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+.users-edit-modal__form input {
+  padding: 1rem;
+  width: 20rem;
+  height: 2.8rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: "josefin-bold", Courier, monospace;
+  font-size: 1.2rem;
+  background-color: var(--pattensBlue);
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.users-edit-modal__form input::placeholder {
+  color: var(--blueDianne);
+}
+
+.users-edit-modal__form-btns-update {
+  padding: 1rem;
+  width: 10rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--aquaGreen);
+  color: var(--white);
+  font-family: "josefin-bold", Courier, monospace;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  cursor: pointer;
+}
+
+.users-edit-modal__form-btns-cancel {
+  padding: 1rem;
+  width: 10rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  font-family: "josefin-bold", Courier, monospace;
+  cursor: pointer;
+  background-color: var(--strawberry);
+  color: var(--white);
+}
