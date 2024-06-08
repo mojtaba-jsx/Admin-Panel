@@ -28,6 +28,11 @@
     margin: 0 auto;
     margin-top: 0.5rem;
   }
+  /* ! Session Remove Modal */
+  .session-remove-modal {
+    left: 50%;
+    top: 140%;
+  }
 }
 
 /* *  ------------------------1280px------------------------ */
@@ -156,6 +161,10 @@
   .users-modal {
     width: 20rem;
   }
+  /* ! Session Remove Modal */
+  .session-remove-modal {
+    width: 25rem;
+  }
 }
 
 /* *  ------------------------840px------------------------ */
@@ -176,6 +185,11 @@
   }
   .tabs__list__item {
     margin-bottom: 1rem;
+  }
+  /* ! Session Remove Modal */
+  .session-remove-modal {
+    width: 22rem;
+    top: 154%;
   }
 }
 
@@ -200,6 +214,17 @@
   /* ! Login Page */
   .form {
     width: 28rem;
+  }
+  /* ! Session Remove Modal */
+  .session-remove-modal {
+    width: 20rem;
+  }
+  .session-remove-modal-btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .session-remove-modal-btns button {
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -236,6 +261,12 @@
   }
   .session-item div span {
     margin-bottom: 1rem;
+  }
+  /* ! Session Remove Modal */
+  .session-remove-modal {
+    width: 12rem;
+    left: 49%;
+    top: 162%;
   }
 }
 
@@ -337,6 +368,11 @@
   .form__password-row-icon,
   .form__email-row-icon {
     right: 3.4rem;
+  }
+  /* ! Session Remove Modal */
+  .session-remove-modal {
+    left: 50%;
+    top: 118%;
   }
 }
 

@@ -15,3 +15,7 @@
     font-family: 'josefin-regular';
     src: url('../fonts/JosefinSans-Regular.ttf');
 }
+@font-face {
+    font-family: 'parastoo';
+    src: url('../fonts/Parastoo.ttf');
+}

@@ -168,7 +168,7 @@ body {
 }
 
 /* ! Session List */
-.sessions__list-title{
+.sessions__list-title {
   text-align: center;
   margin-top: 2rem;
   font-size: 2rem;
@@ -183,36 +183,38 @@ body {
   margin-top: 1rem;
 }
 
-
-.session-item{
-  width:25rem;
+.session-item {
+  width: 80%;
   /* height: 16rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-color: var(--sandyYellow);
-  padding: 1rem;
+
   border-radius: 1rem;
   margin-bottom: 2rem;
-  box-shadow: var(--blueDianne) 0px 0.0625em 0.0625em, var(--blueDianne) 0px 0.125em 0.5em, var(--blueDianne) 0px 0px 0px 1px inset;
-  
+  box-shadow: var(--blueDianne) 0px 0.0625em 0.0625em,
+    var(--blueDianne) 0px 0.125em 0.5em, var(--blueDianne) 0px 0px 0px 1px inset;
 }
-.session-item svg{
-  width: 2.5rem;
-  height: 2.5rem;
+.session-item svg {
+  width: 2rem;
+  height: 2rem;
   margin-right: 1rem;
 }
-.session-item div{
+.session-item div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
+  border-bottom: 2px solid black;
+padding: 1rem;
 }
 
 .session-item__name-text,
 .session-item__time-text,
 .session-item__price-text,
-.session-item__course-text{
+.session-item__course-text,
+.session-item__date-text {
   display: flex;
   align-items: center;
   font-family: "josefin-bold", Courier, monospace;
@@ -222,7 +224,102 @@ body {
 .session-item__name-value,
 .session-item__time-value,
 .session-item__price-value,
-.session-item__course-value{
+.session-item__course-value,
+.session-item__date-value {
   font-family: "josefin-medium", Courier, monospace;
   font-size: 1.2rem;
+}
+
+.session-item__date-value {
+  text-align: right;
+  font-family: "parastoo", Courier, monospace;
+}
+.session-item__name-value,
+.session-item__price-value {
+  font-family: "josefin-medium", "parastoo", monospace;
+}
+
+
+
+.session-item__remove-btn{
+  width: 100%;
+  height: 2.8rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-family: "josefin-bold", Courier, monospace;
+  font-size: 1.2rem;
+  background-color: var(--aquaGreen);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 140ms ease-in;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.session-item__remove-btn:hover{
+  background-color: var(--strawberry);
+}
+.session-item__date{
+  margin-bottom: 0;
+}
+
+
+
+
+/*! User Delete Modal */
+.session__list-wrapper {
+  position: relative;
+}
+.session-remove-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 30rem;
+  background-color: var(--blueDianne);
+  top: 70%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  /* display: none; */
+}
+
+.session-remove-modal-visible {
+  display: flex;
+}
+
+.session-remove-modal-title {
+  font-family: "josefin-bold", Courier, monospace;
+  font-size: 1.2rem;
+  color: var(--white);
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+.session-remove-modal-btns {
+  margin-top: 2rem;
+}
+
+.session-remove-modal-yes,
+.session-remove-modal-no {
+  padding: 1rem 4rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  font-family: "josefin-bold", Courier, monospace;
+  font-size: 1.2rem;
+  color: var(--white);
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.session-remove-modal-yes {
+  background-color: var(--aquaGreen);
+}
+
+.session-remove-modal-no {
+  background-color: var(--strawberry);
 }

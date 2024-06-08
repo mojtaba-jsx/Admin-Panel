@@ -37,6 +37,7 @@ function addNewSession(event) {
   }).then((res) => {
     console.log(res);
     clearInputs();
+    location.reload();
   });
 }
 
@@ -44,4 +45,80 @@ function clearInputs() {
   sessionNameInput.value = "";
   sessionTimeInput.value = "";
   sessionPriceInput.value = "";
+}
+
+// ! Get Courses Data
+let sessionsList = document.querySelector(".session__list-wrapper");
+window.addEventListener("load", getCoursesData);
+
+function getCoursesData() {
+  fetch("http://localhost:3000/api/sessions")
+    .then((res) => res.json())
+    .then((courses) => {
+      console.log(courses);
+      courses.forEach((course) => {
+        sessionsList.insertAdjacentHTML(
+          "beforeend",
+          `
+      <div class="session-item">
+
+      <div class="session-item__name">
+        <span class="session-item__name-text">
+          <svg><use href="#text-icon"></use></svg>
+          Session Name:
+        </span>
+        <span class="session-item__name-value"
+          >${course.title}</span
+        >
+      </div>
+
+      <div class="session-item__time">
+        <span class="session-item__time-text">
+          <svg><use href="#time-icon"></use></svg>
+          Time:
+        </span>
+        <span class="session-item__time-value">${course.time}</span>
+      </div>
+
+      <div class="session-item__price">
+        <span class="session-item__price-text">
+          <svg><use href="#price-icon"></use></svg>
+          Price:
+        </span>
+        <span class="session-item__price-value">${
+          course.isFree ? "پرداخت آنلاین" : "رایگان"
+        }</span>
+      </div>
+
+      <div class="session-item__course">
+        <span class="session-item__course-text">
+          <svg><use href="#course-icon-input"></use></svg>
+          Course:
+        </span>
+        <span class="session-item__course-value">
+         ${course.course}
+        </span>
+      </div>
+
+      <div class="session-item__date">
+        <span class="session-item__date-text">
+          <svg><use href="#course-date"></use></svg>
+          Release Time :
+        </span>
+        <span class="session-item__date-value"> ${course.created_AT}</span>
+      </div>
+      <button onclick="removeSessionModal('${course._id}')" class="session-item__remove-btn">
+              Remove Session
+      </button>
+
+    </div>
+      `
+        );
+      });
+    });
+}
+
+// ! Logic For Remove Session
+function removeSessionModal (sessionID){
+  console.log(sessionID);
 }
