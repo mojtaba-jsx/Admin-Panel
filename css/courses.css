@@ -155,3 +155,49 @@ body {
   width: 2rem;
   height: 2rem;
 }
+
+/* ! Add Course Modal */
+
+.course__add-modal {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  /* width: 30rem; */
+  /* height: 15rem; */
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.course__add-modal input {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "josefin-medium", Courier, monospace;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  background-color: var(--blueDianne);
+  color: var(--white);
+}
+.course__add-modal input::placeholder {
+  color: var(--white);
+}
+
+.course__add-modal-body {
+  width: 100%;
+  height: 20rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  font-family: "josefin-medium", Courier, monospace;
+  background-color: var(--blueDianne);
+  color: var(--white);
+  font-size: 1.2rem;
+}
+.course__add-modal-body::placeholder {
+  color: var(--white);
+}
