@@ -49,9 +49,9 @@ function clearInputs() {
 
 // ! Get Courses Data
 let sessionsList = document.querySelector(".session__list-wrapper");
-window.addEventListener("load", getCoursesData);
+window.addEventListener("load", getSessionsData);
 
-function getCoursesData() {
+function getSessionsData() {
   fetch("http://localhost:3000/api/sessions")
     .then((res) => res.json())
     .then((courses) => {
@@ -107,7 +107,9 @@ function getCoursesData() {
         </span>
         <span class="session-item__date-value"> ${course.created_AT}</span>
       </div>
-      <button onclick="removeSessionModal('${course._id}')" class="session-item__remove-btn">
+      <button onclick="removeSessionModal('${
+        course._id
+      }')" class="session-item__remove-btn">
               Remove Session
       </button>
 
@@ -119,6 +121,22 @@ function getCoursesData() {
 }
 
 // ! Logic For Remove Session
-function removeSessionModal (sessionID){
-  console.log(sessionID);
+let sessionRemoveModal = document.querySelector(".session-remove-modal");
+function removeSessionModal(sessionID) {
+  mainUserID = sessionID;
+  sessionRemoveModal.classList.add("session-remove-modal-visible");
+}
+
+function removeSession() {
+  fetch(`http://localhost:3000/api/sessions/${mainUserID}`, {
+    method: "DELETE",
+  }).then((res) => {
+    console.log(res);
+    closeRemoveSesssionModal();
+    location.reload();
+  });
+}
+
+function closeRemoveSesssionModal() {
+  sessionRemoveModal.classList.remove("session-remove-modal-visible");
 }
