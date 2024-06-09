@@ -6,7 +6,11 @@ let courseCategory = document.querySelector(".course__add-modal-category");
 let courseBody = document.querySelector(".course__add-modal-body");
 let coursePrice = document.querySelector(".course__add-modal-price");
 
+
+
 addCourseBtn.addEventListener("click", addNewCourse);
+
+
 
 function addNewCourse() {
   let newCourseInfos = {
@@ -91,3 +95,13 @@ function getCoursesData() {
       });
     });
 }
+
+
+
+// ! Checking Admin Login
+window.addEventListener('load',()=>{
+  let adminId = localStorage.getItem('loginID')
+  if(!adminId){
+    location.href='./index.html'
+  }
+})

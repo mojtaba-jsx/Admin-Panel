@@ -140,3 +140,13 @@ function removeSession() {
 function closeRemoveSesssionModal() {
   sessionRemoveModal.classList.remove("session-remove-modal-visible");
 }
+
+
+
+// ! Checking Admin Login
+window.addEventListener('load',()=>{
+  let adminId = localStorage.getItem('loginID')
+  if(!adminId){
+    location.href='./index.html'
+  }
+})
