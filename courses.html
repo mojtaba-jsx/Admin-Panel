@@ -271,6 +271,38 @@
           d="M12 4.5v15m7.5-7.5h-15"
         />
       </symbol>
+
+      <symbol
+        id="date-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+        />
+      </symbol>
+
+      <symbol
+        id="time-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+        />
+      </symbol>
     </svg>
 
     <header class="header">
@@ -404,58 +436,14 @@
             </div>
             <!-- ! ////Courses//// -->
             <section class="courses">
-              <div class="courses__item">
-                <div class="courses__item__left">
-                  <img
-                    src="./images/bitcoin-robot.jpg"
-                    alt="course"
-                    class="courses__item__left-image"
-                  />
-                </div>
 
-                <div class="courses__item__right">
-                  <div class="courses__item__right__top">
-                    <span class="courses__item__right__top-title">
-                      Course1
-                    </span>
-                    <p class="courses__item__right__top-text">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Perspiciatis, quia!
-                    </p>
-                  </div>
+              <div class="courses__wrapper">
 
-                  <div class="courses__item__right__bottom">
-                    <div class="courses__item__right__bottom__left">
-                      <span class="courses__item__right__bottom__left-price">
-                        <svg>
-                          <use href="#money-icon"></use>
-                        </svg>
-                        235,000
-                      </span>
-                      <span class="courses__item__right__bottom__left-category">
-                        <svg>
-                          <use href="#category-icon"></use>
-                        </svg>
-                        Code
-                      </span>
-                    </div>
 
-                    <div class="courses__item__right__bottom__right">
-                      <span class="courses__item__right__bottom__right-users">
-                        <svg>
-                          <use href="#users-icon"></use>
-                        </svg>
-                        10,000
-                      </span>
-                    </div>
-                  </div>
-                </div>
               </div>
 
-
-
               <div class="course__add-modal">
-                <h1 class="course__add-modal-text">Add new Course </h1>
+                <h1 class="course__add-modal-text">Add new Course</h1>
                 <input
                   placeholder="Enter Title"
                   type="text"
@@ -483,7 +471,10 @@
                   type="text"
                   class="course__add-modal-category"
                 />
-                <textarea class="course__add-modal-body" placeholder="Enter Description" ></textarea>
+                <textarea
+                  class="course__add-modal-body"
+                  placeholder="Enter Description"
+                ></textarea>
                 <button class="courses-btn">
                   <svg>
                     <use href="#plus-icon"></use>

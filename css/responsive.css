@@ -77,6 +77,25 @@
 
 /* *  ------------------------1200px------------------------ */
 @media screen and (max-width: 1200px) {
+  /*! Courses Item */
+  .courses__item {
+    flex-direction: column;
+  }
+  .courses__item-left {
+    width: 100%;
+  }
+  .courses__item-right {
+    width: 100%;
+  }
+  .courses__item-right__top-title {
+    text-align: center;
+  }
+  .courses__item-right__top-title-text {
+    text-align: center;
+  }
+  .courses__item-right__bottom span {
+    flex-direction: column;
+  }
 }
 
 /* *  ------------------------1140px------------------------ */
@@ -351,6 +370,15 @@
   /* ! Users Delete Modal  */
   .users-modal {
     width: 14rem;
+  }
+  /*! Courses Item */
+  .courses__item-right__bottom {
+    flex-direction: column;
+  }
+  .courses__item-right__bottom span {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
