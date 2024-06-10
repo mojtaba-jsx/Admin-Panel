@@ -1,4 +1,13 @@
-
+:root {
+  --mercury: #e5e5e5;
+  --blueDianne: #224957;
+  --aquaGreen: #20df7f;
+  --white: #ffffff;
+  --black: #111219;
+  --strawberry: #ff204e;
+  --pattensBlue: #dff5ff;
+  --brightSkyBlue:#00c9ff;
+}
 /* ! ////////Header Section//////// */
 
 .header__wrapper {
@@ -22,10 +31,7 @@
     padding: 1rem;
     border-radius: 1rem;
   }
-  .header__left:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-      rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
+
   .header__left__infos {
     display: flex;
     align-items: center;
@@ -94,3 +100,12 @@
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   
+
+  #clock {
+    font-size: 2.8rem;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: "josefin-bold", Courier, monospace;
+    color: var(--brightSkyBlue);
+    text-shadow: 3px 3px 2px var(--black);
+  }

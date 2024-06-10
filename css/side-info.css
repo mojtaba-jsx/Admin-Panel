@@ -1,3 +1,13 @@
+:root {
+  --mercury: #e5e5e5;
+  --blueDianne: #224957;
+  --aquaGreen: #20df7f;
+  --white: #ffffff;
+  --black: #111219;
+  --strawberry: #ff204e;
+  --pattensBlue: #dff5ff;
+  --brightSkyBlue:#00c9ff;
+}
 /* ! ////////Main Section//////// */
 
 .main__wrapper {
@@ -92,7 +102,7 @@
 
 .user-info__bottom-btn {
   padding: 0.5rem;
-  margin-top: 0.5rem;
+  margin-top: 2rem;
   font-size: 1.1rem;
   display: flex;
   align-items: center;
@@ -143,3 +153,5 @@
 .tabs__list__item-link svg {
   margin-right: 1rem;
 }
+
+

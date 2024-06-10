@@ -12,6 +12,7 @@
   --black: #111219;
   --strawberry: #ff204e;
   --pattensBlue: #dff5ff;
+  --brightSkyBlue:#00c9ff;
 }
 .title {
   font-family: "diplomat", Courier, monospace;
@@ -104,7 +105,7 @@ body {
 }
 
 .users__list {
-  height: 22rem;
+  height: 20rem;
   overflow-y: scroll;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -334,3 +335,8 @@ body {
   background-color: var(--strawberry);
   color: var(--white);
 }
+
+
+
+
+

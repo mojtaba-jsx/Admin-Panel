@@ -81,9 +81,6 @@ let lastNameInput = document.querySelector(
   ".users-edit-modal__form-lastname-input"
 );
 
-
-
-
 // ! Show Edit Modal
 function showEditModal(userID) {
   usersEditModal.classList.add("show-edit-modal");
@@ -121,12 +118,11 @@ function updateUser() {
   });
 }
 
-
-
 // ! Checking Admin Login
-window.addEventListener('load',()=>{
-  let adminId = localStorage.getItem('loginID')
-  if(!adminId){
-    location.href='./index.html'
+window.addEventListener("load", () => {
+  let adminId = localStorage.getItem("loginID");
+  if (!adminId) {
+    location.href = "./index.html";
   }
-})
+});
+

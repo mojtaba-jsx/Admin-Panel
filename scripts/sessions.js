@@ -37,6 +37,7 @@ function addNewSession(event) {
   }).then((res) => {
     console.log(res);
     clearInputs();
+    getSessionsData()
     location.reload();
   });
 }

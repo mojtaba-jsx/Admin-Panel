@@ -30,6 +30,7 @@ function addNewCourse() {
     body: JSON.stringify(newCourseInfos),
   }).then((res) => {
     console.log(res)
+    getCoursesData()
     location.reload()
   });
 }
