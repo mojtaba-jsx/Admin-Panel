@@ -2,16 +2,14 @@
 // ! Get Main Admin Info
 let userInfoSection = document.querySelector(".user-info");
 window.addEventListener("load", () => {
-  let userIdFromLocalStorage = localStorage.getItem("loginID");
-  console.log(userIdFromLocalStorage);
-  fetch(`http://localhost:3000/api/admins/${userIdFromLocalStorage}`)
+  let adminIdFromLocalStorage = localStorage.getItem("loginID");
+  fetch(`http://localhost:3000/api/admins/${adminIdFromLocalStorage}`)
     .then((res) => res.json())
     .then((admin) => {
       console.log(admin);
       userInfoSection.insertAdjacentHTML(
         "beforeend",
         `
-      
             <div class="user-info__top" style="background-image: url('${admin.banner}');">
               <img
                 src="${admin.profile}"
@@ -45,10 +43,10 @@ window.addEventListener("load", () => {
                 </div>
                 <div class="user-info__bottom__all-info__courses">
                   <span class="user-info__bottom__all-info__courses-text">
-                     Password:
+                     Email
                   </span>
                   <span class="user-info__bottom__all-info__courses-value ">
-                    ${admin.password}
+                    ${admin.email}
                   </span>
                 </div>
 
