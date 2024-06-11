@@ -1,5 +1,36 @@
 let usersList = document.querySelector(".users__list");
 let mainUserID = null;
+
+// ! Add User
+let firstnameInput = document.querySelector(".users-add__form-firstname");
+let lastnameInput = document.querySelector(".users-add__form-lastname");
+let usernameInput = document.querySelector(".users-add__form-username");
+let addNewUserBtn = document.querySelector(".users-add-btn");
+
+addNewUserBtn.addEventListener("click", addNewUser);
+
+function addNewUser(event) {
+  event.preventDefault();
+  // ! Info Of User
+  let newUserData = {
+    firstName: firstnameInput.value,
+    lastName: lastnameInput.value,
+    userName: usernameInput.value,
+    profile: "https://imgurl.ir/uploads/o43139_images.png",
+  };
+  fetch("http://localhost:3000/api/users", {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json",
+    },
+    body: JSON.stringify(newUserData),
+  }).then((res) => {
+    console.log(res);
+    location.reload();
+    usersList.scrollTop = 0;
+  });
+}
+
 // ! Get Users Info From Api
 window.addEventListener("load", getUsersInfo);
 
@@ -7,6 +38,7 @@ function getUsersInfo() {
   fetch("http://localhost:3000/api/users")
     .then((res) => res.json())
     .then((data) => {
+      console.log(data);
       data.forEach((user) => {
         usersList.insertAdjacentHTML(
           "beforeend",
@@ -27,6 +59,7 @@ function getUsersInfo() {
                 <span class="users__list__item-left--right-user-info"
                   >${user.firstName} ${user.lastName}</span
                 >
+
               </div>
             </div>
             
@@ -125,4 +158,3 @@ window.addEventListener("load", () => {
     location.href = "./index.html";
   }
 });
-

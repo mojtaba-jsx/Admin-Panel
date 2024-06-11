@@ -157,7 +157,6 @@
             <div id="clock"></div>
           </div>
 
-
           <div class="header__right">
             <span class="header__right__dark-light">
               <svg>
@@ -179,9 +178,7 @@
     <main class="main">
       <div class="container">
         <div class="main__wrapper">
-          <section class="user-info">
-
-          </section>
+          <section class="user-info"></section>
           <!-- ! ////Tabs//// -->
           <section class="tabs">
             <div class="tabs__wrapper">
@@ -236,15 +233,35 @@
                 </button>
               </div>
 
+              <div class="users-add">
+                <form class="users-add__form">
+                  <div class="users-add__form__row1">
+                    <input placeholder="FirstName" type="text" class="users-add__form-firstname" />
+                    <input placeholder="LastName" type="text" class="users-add__form-lastname" />
+                  </div>
+                  <div class="users-add__form__row2">
+                    <input placeholder="UserName" type="text" class="users-add__form-username" />
+                    <input placeholder="Email" type="email" class="users-add__form-email" />
+                  </div>
+                </form>
+                <button class="users-add-btn">Add New User</button>
+              </div>
+
               <div class="users__list">
                 <!-- ! Add User With Js Script -->
               </div>
               <!-- ! Users Delete Modal -->
               <div class="users-modal">
-                <span class="users-modal-title"> Are You Sure Want Delete This User ?</span>
+                <span class="users-modal-title">
+                  Are You Sure Want Delete This User ?</span
+                >
                 <div class="users-modal-btns">
-                  <button class="users-modal-yes" onclick="deleteUser()">Yes</button>
-                  <button class="users-modal-no" onclick="closeDeleteModal()">No</button>
+                  <button class="users-modal-yes" onclick="deleteUser()">
+                    Yes
+                  </button>
+                  <button class="users-modal-no" onclick="closeDeleteModal()">
+                    No
+                  </button>
                 </div>
               </div>
               <!-- ! Users Edit Modal -->
@@ -253,12 +270,28 @@
                   Fill Out The Following Fields For Edit The User
                 </span>
                 <div class="users-edit-modal__form">
-                  <input placeholder="UserName" type="text" class="users-edit-modal__form-username-input">
-                  <input placeholder="FirstName" type="text" class="users-edit-modal__form-firstname-input">
-                  <input placeholder="LastName" type="text" class="users-edit-modal__form-lastname-input">
+                  <input
+                    placeholder="UserName"
+                    type="text"
+                    class="users-edit-modal__form-username-input"
+                  />
+                  <input
+                    placeholder="FirstName"
+                    type="text"
+                    class="users-edit-modal__form-firstname-input"
+                  />
+                  <input
+                    placeholder="LastName"
+                    type="text"
+                    class="users-edit-modal__form-lastname-input"
+                  />
                   <div class="users-edit-modal__form-btns">
-                    <button class="users-edit-modal__form-btns-update">Update Information</button>
-                    <button class="users-edit-modal__form-btns-cancel">Cencel</button>
+                    <button class="users-edit-modal__form-btns-update">
+                      Update Information
+                    </button>
+                    <button class="users-edit-modal__form-btns-cancel">
+                      Cencel
+                    </button>
                   </div>
                 </div>
               </div>
@@ -272,3 +305,4 @@
     <script src="./scripts/shared.js"></script>
   </body>
 </html>
+

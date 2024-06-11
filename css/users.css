@@ -105,12 +105,14 @@ body {
 }
 
 .users__list {
-  height: 20rem;
+  height: 8rem;
   overflow-y: scroll;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .users__list::-webkit-scrollbar {
@@ -338,5 +340,60 @@ body {
 
 
 
+/* ! Add Users Sectin */
+.users-add__form{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+}
+.users-add-title{
+  text-align: center;
+  font-family: "josefin-bold", Courier, monospace;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  color: var(--brightSkyBlue);
+  font-weight: 800;
+  
+}
 
+.users-add__form input {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  width: 20rem;
+  border: none;
+  outline: none;
+  background-color: var(--blueDianne);
+  color: var(--white);
+  text-align: center;
+  font-family: "josefin-medium", Courier, monospace;
+  font-size: 1.2rem;
 
+}
+.users-add__form input::placeholder{
+  color: var(--white);
+  font-family: "josefin-medium", Courier, monospace;
+}
+
+.users-add__form div{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.users-add-btn{
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--aquaGreen);
+  color: var(--white);
+  font-family: "josefin-bold", Courier, monospace;
+  font-size: 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
