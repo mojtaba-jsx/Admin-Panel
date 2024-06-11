@@ -7,7 +7,10 @@
   --blueDianne: #224957;
   --aquaGreen: #20df7f;
   --white: #ffffff;
-  --black: #000000;
+  --black: #111219;
+  --strawberry: #ff204e;
+  --pattensBlue: #dff5ff;
+  --brightSkyBlue:#00c9ff;
 }
 .title {
   font-family: "diplomat", Courier, monospace;
@@ -158,4 +161,10 @@ input::placeholder {
 .footer__shape-blue {
   width: 100%;
   position: absolute;
+}
+
+
+/* ! iziToast Styles */
+.iziToast-close {
+  color: var(--strawberry) !important; /* تغییر رنگ به قرمز */
 }
