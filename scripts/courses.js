@@ -1,3 +1,4 @@
+// ! Elements
 let addCourseBtn = document.querySelector(".courses-btn");
 let courseTitle = document.querySelector(".course__add-modal-title");
 let courseTime = document.querySelector(".course__add-modal-time");
@@ -6,12 +7,10 @@ let courseCategory = document.querySelector(".course__add-modal-category");
 let courseBody = document.querySelector(".course__add-modal-body");
 let coursePrice = document.querySelector(".course__add-modal-price");
 
-
-
+// ! Set Event On Add Course button
 addCourseBtn.addEventListener("click", addNewCourse);
 
-
-
+// ! Add New Course To DataBase
 function addNewCourse() {
   let newCourseInfos = {
     title: courseTitle.value,
@@ -29,9 +28,9 @@ function addNewCourse() {
     },
     body: JSON.stringify(newCourseInfos),
   }).then((res) => {
-    console.log(res)
-    getCoursesData()
-    location.reload()
+    console.log(res);
+    getCoursesData();
+    location.reload();
   });
 }
 
@@ -85,8 +84,7 @@ function getCoursesData() {
   
                       <span class="courses__item-right__bottom-release">
                         <svg><use href="#date-icon"></use></svg>
-                        ${course.created_AT
-                        }
+                        ${course.created_AT}
                       </span>
                     </div>
                   </div>
@@ -97,12 +95,10 @@ function getCoursesData() {
     });
 }
 
-
-
 // ! Checking Admin Login
-window.addEventListener('load',()=>{
-  let adminId = localStorage.getItem('loginID')
-  if(!adminId){
-    location.href='./index.html'
+window.addEventListener("load", () => {
+  let adminId = localStorage.getItem("loginID");
+  if (!adminId) {
+    location.href = "./index.html";
   }
-})
+});

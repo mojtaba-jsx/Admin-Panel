@@ -4,6 +4,7 @@
 @import "./header.css";
 @import "./side-info.css";
 
+/* ! Color Variabels */
 :root {
   --mercury: #e5e5e5;
   --blueDianne: #224957;
@@ -37,7 +38,6 @@ body {
 
 .main__wrapper {
   display: flex;
-  /* align-items: center; */
 }
 
 .user-info {
@@ -53,14 +53,12 @@ body {
 
 .tabs {
   width: 75%;
-  /* background-color: blue; */
   margin-top: 1rem;
 }
 
 /*! Users Section */
 .users__searchbox {
   display: flex;
-  /* align-items: center; */
   justify-content: space-around;
   margin-top: 2rem;
 }
@@ -109,7 +107,6 @@ body {
   overflow-y: scroll;
   padding-left: 1rem;
   padding-right: 1rem;
-  /* margin-top: 1rem; */
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
@@ -261,7 +258,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 30rem;
-  /* height: 20rem; */
   background-color: var(--blueDianne);
   padding: 1rem;
   border-radius: 1rem;
@@ -343,7 +339,6 @@ body {
 /* ! Add Users Sectin */
 .users-add__form{
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-around;
 }
 .users-add-title{

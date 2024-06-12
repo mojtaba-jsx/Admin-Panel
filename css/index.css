@@ -2,6 +2,7 @@
 @import "./reset.css";
 @import "./fonts.css";
 
+/* ! Color Variables */
 :root {
   --mercury: #e5e5e5;
   --blueDianne: #224957;
@@ -10,7 +11,7 @@
   --black: #111219;
   --strawberry: #ff204e;
   --pattensBlue: #dff5ff;
-  --brightSkyBlue:#00c9ff;
+  --brightSkyBlue: #00c9ff;
 }
 .title {
   font-family: "diplomat", Courier, monospace;
@@ -41,9 +42,7 @@ body {
 
 /* ! ////////Main Section//////// */
 .form {
-  /* background-color: red; */
   width: 34rem;
-  /* height: 24rem; */
   margin: 0 auto;
   margin-top: 2rem;
   padding: 2rem;
@@ -56,7 +55,6 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  /* background-color: red; */
   align-items: center;
   text-align: center;
   flex-direction: row-reverse;
@@ -124,7 +122,6 @@ input::placeholder {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* flex-direction: row-reverse; */
   font-family: "josefin-light", Courier, monospace;
   font-size: 1.2rem;
 }
@@ -163,8 +160,3 @@ input::placeholder {
   position: absolute;
 }
 
-
-/* ! iziToast Styles */
-.iziToast-close {
-  color: var(--strawberry) !important; /* تغییر رنگ به قرمز */
-}

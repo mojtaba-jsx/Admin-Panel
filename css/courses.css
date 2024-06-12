@@ -4,6 +4,7 @@
 @import "./header.css";
 @import "./side-info.css";
 
+/* ! Color Variables */
 :root {
   --mercury: #e5e5e5;
   --blueDianne: #224957;
@@ -51,7 +52,6 @@ body {
 }
 
 /* ! Course Item */
-
 .courses__item {
   display: flex;
   border-top-left-radius: 1rem;
@@ -163,9 +163,6 @@ body {
 .course__add-modal {
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
-  /* width: 30rem; */
-  /* height: 15rem; */
   padding: 1rem;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -203,7 +200,6 @@ body {
 .course__add-modal-body::placeholder {
   color: var(--white);
 }
-
 .course__add-modal-text {
   text-align: center;
   font-family: "josefin-bold", Courier, monospace;

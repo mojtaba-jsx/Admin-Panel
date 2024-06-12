@@ -1,14 +1,13 @@
+// ! Elements
 let usersList = document.querySelector(".users__list");
 let mainUserID = null;
-
-// ! Add User
 let firstnameInput = document.querySelector(".users-add__form-firstname");
 let lastnameInput = document.querySelector(".users-add__form-lastname");
 let usernameInput = document.querySelector(".users-add__form-username");
 let addNewUserBtn = document.querySelector(".users-add-btn");
 
+// ! Add New User To DataBase
 addNewUserBtn.addEventListener("click", addNewUser);
-
 function addNewUser(event) {
   event.preventDefault();
   // ! Info Of User
@@ -33,7 +32,6 @@ function addNewUser(event) {
 
 // ! Get Users Info From Api
 window.addEventListener("load", getUsersInfo);
-
 function getUsersInfo() {
   fetch("http://localhost:3000/api/users")
     .then((res) => res.json())
@@ -76,16 +74,19 @@ function getUsersInfo() {
     });
 }
 
-// ! Delete User From List
+// ! Show Delete User Modal
 let usersModal = document.querySelector(".users-modal");
 function showDeleteModal(userID) {
   mainUserID = userID;
   usersModal.classList.add("users-modal-visible");
 }
 
+// ! Close Delete User Modal
 function closeDeleteModal() {
   usersModal.classList.remove("users-modal-visible");
 }
+
+// ! Delete User From DataBase
 function deleteUser() {
   fetch(`http://localhost:3000/api/users/${mainUserID}`, {
     method: "DELETE",
@@ -128,6 +129,7 @@ function closeEditmodal() {
   usersEditModal.classList.remove("show-edit-modal");
 }
 
+// ! Edit Users Function
 userEditModalUpdateBtn.addEventListener("click", updateUser);
 function updateUser() {
   let userInfo = {

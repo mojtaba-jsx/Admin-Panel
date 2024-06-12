@@ -1,8 +1,10 @@
+// ! Elements
 const $ = document;
 const usernameInput = $.querySelector(".form__username-input");
 const passwordInput = $.querySelector(".form__password-input");
 const adminLoginBtn = $.querySelector(".form-btn");
 
+// ! Set Event On FormLogin Button
 adminLoginBtn.addEventListener("click", (event) => {
   event.preventDefault();
 
@@ -52,6 +54,8 @@ adminLoginBtn.addEventListener("click", (event) => {
     });
 });
 
+
+// ! Clear Input Fields
 function clearInputs() {
   usernameInput.value = "";
   passwordInput.value = "";

@@ -4,6 +4,7 @@
 @import "./header.css";
 @import "./side-info.css";
 
+/* ! Color Variables */
 :root {
   --mercury: #e5e5e5;
   --blueDianne: #224957;
@@ -138,7 +139,6 @@ body {
   width: 20rem;
   padding: 1rem;
   margin: 0 auto;
-  /* margin-top: 1rem; */
   border: none;
   outline: none;
   border-radius: 1rem;
@@ -188,7 +188,6 @@ body {
   color: var(--white);
   cursor: pointer;
 }
-
 
 .inforamtion__form__row3-icon{
   position: absolute;

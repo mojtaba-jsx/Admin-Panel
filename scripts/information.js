@@ -6,8 +6,7 @@ window.addEventListener("load", () => {
   }
 });
 
-// ! Get Admin Info And Show In Inputs
-
+// ! Elements
 let firstNameInput = document.querySelector(".inforamtion__form__row1__input1");
 let lastNameInput = document.querySelector(".inforamtion__form__row1__input2");
 let currentPasswordInput = document.querySelector(
@@ -36,12 +35,15 @@ window.addEventListener("load", () => {
 });
 
 // ! Edit Admin Info
-
 updateInformationBtn.addEventListener("click", editAdminInfo);
 
 function editAdminInfo(event) {
-  event.preventDefault()
-  if (newPasswordInput.value === cofirmPasswrodInput.value &&newPasswordInput.value.length > 4 &&cofirmPasswrodInput.value.length > 4 ) {
+  event.preventDefault();
+  if (
+    newPasswordInput.value === cofirmPasswrodInput.value &&
+    newPasswordInput.value.length > 4 &&
+    cofirmPasswrodInput.value.length > 4
+  ) {
     let adminNewInfo = {
       firstName: firstNameInput.value,
       lastName: lastNameInput.value,
@@ -55,10 +57,9 @@ function editAdminInfo(event) {
       headers: {
         "Content-type": "application/json",
       },
-      body:JSON.stringify(adminNewInfo)
-    })
-    .then(res=>console.log(res))
-    location.reload()
+      body: JSON.stringify(adminNewInfo),
+    }).then((res) => console.log(res));
+    location.reload();
   } else {
     alert("The Passwords Do Not Match");
   }

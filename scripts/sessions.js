@@ -18,6 +18,7 @@ coursesNames.addEventListener("change", function () {
   coursesNames.setAttribute("data-default", selectedOption);
 });
 
+// ! Add New Session To DataBase
 addNewSessionBtn.addEventListener("click", addNewSession);
 function addNewSession(event) {
   event.preventDefault();
@@ -37,18 +38,18 @@ function addNewSession(event) {
   }).then((res) => {
     console.log(res);
     clearInputs();
-    getSessionsData()
+    getSessionsData();
     location.reload();
   });
 }
-
+// ! Clear Session Inputs
 function clearInputs() {
   sessionNameInput.value = "";
   sessionTimeInput.value = "";
   sessionPriceInput.value = "";
 }
 
-// ! Get Courses Data
+// ! Get Sessions Data
 let sessionsList = document.querySelector(".session__list-wrapper");
 window.addEventListener("load", getSessionsData);
 
@@ -127,7 +128,7 @@ function removeSessionModal(sessionID) {
   mainUserID = sessionID;
   sessionRemoveModal.classList.add("session-remove-modal-visible");
 }
-
+// ! Remove Session From DataBase
 function removeSession() {
   fetch(`http://localhost:3000/api/sessions/${mainUserID}`, {
     method: "DELETE",
@@ -137,17 +138,15 @@ function removeSession() {
     location.reload();
   });
 }
-
+// ! Close Remove Session Modal
 function closeRemoveSesssionModal() {
   sessionRemoveModal.classList.remove("session-remove-modal-visible");
 }
 
-
-
 // ! Checking Admin Login
-window.addEventListener('load',()=>{
-  let adminId = localStorage.getItem('loginID')
-  if(!adminId){
-    location.href='./index.html'
+window.addEventListener("load", () => {
+  let adminId = localStorage.getItem("loginID");
+  if (!adminId) {
+    location.href = "./index.html";
   }
-})
+});
