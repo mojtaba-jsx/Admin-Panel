@@ -75,3 +75,10 @@ function updateClock() {
 }
 setInterval(updateClock, 1000);
 updateClock();
+
+// ! Exit Panel
+let exitPanelBtn = document.querySelector(".header__right__exit");
+exitPanelBtn.addEventListener("click", () => {
+  localStorage.clear();
+  location.reload();
+});
